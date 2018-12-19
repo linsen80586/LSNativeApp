@@ -9,10 +9,12 @@
 /* Begin PBXBuildFile section */
 		6D0C801C21CA434D002B16DE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D0C801B21CA434D002B16DE /* AppDelegate.m */; };
 		6D0C801F21CA434D002B16DE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D0C801E21CA434D002B16DE /* ViewController.m */; };
-		6D0C802221CA434D002B16DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D0C802021CA434D002B16DE /* Main.storyboard */; };
 		6D0C802421CA434F002B16DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D0C802321CA434F002B16DE /* Assets.xcassets */; };
 		6D0C802721CA434F002B16DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D0C802521CA434F002B16DE /* LaunchScreen.storyboard */; };
 		6D0C802A21CA434F002B16DE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D0C802921CA434F002B16DE /* main.m */; };
+		6D0C803D21CA5546002B16DE /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D0C803C21CA5546002B16DE /* ViewController.xib */; };
+		6D0C804121CA58AB002B16DE /* RNViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D0C803F21CA58AB002B16DE /* RNViewController.m */; };
+		6D0C804221CA58AB002B16DE /* RNViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D0C804021CA58AB002B16DE /* RNViewController.xib */; };
 		A903E2785BC466E372DCDDF4 /* libPods-LSNativeApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0603BFEBDC311B1510834E6D /* libPods-LSNativeApp.a */; };
 /* End PBXBuildFile section */
 
@@ -24,11 +26,14 @@
 		6D0C801B21CA434D002B16DE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		6D0C801D21CA434D002B16DE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		6D0C801E21CA434D002B16DE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		6D0C802121CA434D002B16DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6D0C802321CA434F002B16DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6D0C802621CA434F002B16DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6D0C802821CA434F002B16DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6D0C802921CA434F002B16DE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6D0C803C21CA5546002B16DE /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		6D0C803E21CA58AB002B16DE /* RNViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNViewController.h; sourceTree = "<group>"; };
+		6D0C803F21CA58AB002B16DE /* RNViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNViewController.m; sourceTree = "<group>"; };
+		6D0C804021CA58AB002B16DE /* RNViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RNViewController.xib; sourceTree = "<group>"; };
 		C8CEAD85AB8F5E2F9D157D08 /* Pods-LSNativeApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LSNativeApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-LSNativeApp/Pods-LSNativeApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -85,8 +90,11 @@
 				6D0C801A21CA434D002B16DE /* AppDelegate.h */,
 				6D0C801B21CA434D002B16DE /* AppDelegate.m */,
 				6D0C801D21CA434D002B16DE /* ViewController.h */,
+				6D0C803E21CA58AB002B16DE /* RNViewController.h */,
+				6D0C803F21CA58AB002B16DE /* RNViewController.m */,
+				6D0C804021CA58AB002B16DE /* RNViewController.xib */,
 				6D0C801E21CA434D002B16DE /* ViewController.m */,
-				6D0C802021CA434D002B16DE /* Main.storyboard */,
+				6D0C803C21CA5546002B16DE /* ViewController.xib */,
 				6D0C802321CA434F002B16DE /* Assets.xcassets */,
 				6D0C802521CA434F002B16DE /* LaunchScreen.storyboard */,
 				6D0C802821CA434F002B16DE /* Info.plist */,
@@ -153,9 +161,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D0C804221CA58AB002B16DE /* RNViewController.xib in Resources */,
 				6D0C802721CA434F002B16DE /* LaunchScreen.storyboard in Resources */,
+				6D0C803D21CA5546002B16DE /* ViewController.xib in Resources */,
 				6D0C802421CA434F002B16DE /* Assets.xcassets in Resources */,
-				6D0C802221CA434D002B16DE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D0C804121CA58AB002B16DE /* RNViewController.m in Sources */,
 				6D0C801F21CA434D002B16DE /* ViewController.m in Sources */,
 				6D0C802A21CA434F002B16DE /* main.m in Sources */,
 				6D0C801C21CA434D002B16DE /* AppDelegate.m in Sources */,
@@ -200,14 +210,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		6D0C802021CA434D002B16DE /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6D0C802121CA434D002B16DE /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		6D0C802521CA434F002B16DE /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "RNViewController.h"
 
 @interface ViewController ()
 
@@ -19,5 +20,9 @@
     // Do any additional setup after loading the view, typically from a nib.
 }
 
+- (IBAction)onTouch1:(id)sender {
+    RNViewController *vc = [RNViewController new];
+    [self.navigationController pushViewController:vc animated:YES];
+}
 
 @end
