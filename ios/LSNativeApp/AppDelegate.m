@@ -8,6 +8,9 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
+#import <React/RCTRootView.h>
+#import <React/RCTBundleURLProvider.h>
+
 @interface AppDelegate ()
 
 @end
@@ -16,10 +19,21 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    ViewController *vc = [[ViewController alloc] init];
-    UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController:vc];
-    self.window.rootViewController = navi;
+//    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+//    ViewController *vc = [[ViewController alloc] init];
+//    UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController:vc];
+//    self.window.rootViewController = navi;
+//    [self.window makeKeyAndVisible];
+    
+    NSURL *jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index" fallbackResource:nil];
+    RCTRootView *rootView = [[RCTRootView alloc] initWithBundleURL:jsCodeLocation
+                                                        moduleName:@"LSNativeApp"
+                                                 initialProperties:nil
+                                                     launchOptions:nil];
+    rootView.backgroundColor = [[UIColor alloc] initWithRed:1.0f green:1.0f blue:1.0f alpha:1];
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.rootViewController = [[UIViewController alloc] init];
+    self.window.rootViewController.view = rootView;
     [self.window makeKeyAndVisible];
     return YES;
 }
