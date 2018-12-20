@@ -89,10 +89,10 @@
 			children = (
 				6D0C801A21CA434D002B16DE /* AppDelegate.h */,
 				6D0C801B21CA434D002B16DE /* AppDelegate.m */,
-				6D0C801D21CA434D002B16DE /* ViewController.h */,
 				6D0C803E21CA58AB002B16DE /* RNViewController.h */,
 				6D0C803F21CA58AB002B16DE /* RNViewController.m */,
 				6D0C804021CA58AB002B16DE /* RNViewController.xib */,
+				6D0C801D21CA434D002B16DE /* ViewController.h */,
 				6D0C801E21CA434D002B16DE /* ViewController.m */,
 				6D0C803C21CA5546002B16DE /* ViewController.xib */,
 				6D0C802321CA434F002B16DE /* Assets.xcassets */,

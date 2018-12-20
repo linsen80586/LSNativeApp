@@ -7,6 +7,8 @@
 //
 
 #import "RNViewController.h"
+#import <React/RCTRootView.h>
+#import <React/RCTBundleURLProvider.h>
 
 @interface RNViewController ()
 
@@ -16,7 +18,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    NSURL *jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index" fallbackResource:nil];
+    RCTRootView *rootView = [[RCTRootView alloc] initWithBundleURL:jsCodeLocation
+                                                        moduleName:@"LSNativeApp"
+                                                 initialProperties:nil
+                                                     launchOptions:nil];
+    rootView.backgroundColor = [[UIColor alloc] initWithRed:1.0f green:1.0f blue:1.0f alpha:1];
+    self.view = rootView;
 }
 
 /*
