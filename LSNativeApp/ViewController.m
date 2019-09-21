@@ -16,8 +16,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.title = @"首页";
+    self.view.backgroundColor = [UIColor whiteColor];
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeSystem];
+    btn.frame = CGRectMake(0, 100, 200, 50);
+    [btn setTitle:@"ok" forState: UIControlStateNormal];
+    [btn addTarget:self action:@selector(onBtn:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btn];
 }
 
+-(void)onBtn:(UIButton *)button{
+
+}
 
 @end
