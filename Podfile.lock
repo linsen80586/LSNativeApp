@@ -33,13 +33,19 @@ PODS:
   - CocoaLumberjack (3.5.3):
     - CocoaLumberjack/Core (= 3.5.3)
   - CocoaLumberjack/Core (3.5.3)
+  - FBRetainCycleDetector (0.1.4)
   - FCUUID (1.3.1):
     - UICKeyChainStore (~> 2.1.0)
   - fishhook (0.2)
+  - FMDB (2.7.5):
+    - FMDB/standard (= 2.7.5)
+  - FMDB/standard (2.7.5)
   - IQKeyboardManager (6.4.2)
   - JLRoutes (2.1)
   - Masonry (1.1.0)
   - MJRefresh (3.1.17)
+  - MLeaksFinder (1.0.0):
+    - FBRetainCycleDetector
   - Reachability (3.2)
   - ReactiveObjC (3.1.1)
   - Realm (3.12.0):
@@ -49,8 +55,14 @@ PODS:
   - SDWebImage (5.1.1):
     - SDWebImage/Core (= 5.1.1)
   - SDWebImage/Core (5.1.1)
+  - SQLiteRepairKit (1.2.2):
+    - WCDBOptimizedSQLCipher (~> 1.2.0)
   - SVProgressHUD (2.2.5)
   - UICKeyChainStore (2.1.2)
+  - WCDB (1.0.7.5):
+    - SQLiteRepairKit (~> 1.2.0)
+    - WCDBOptimizedSQLCipher (~> 1.2.0)
+  - WCDBOptimizedSQLCipher (1.2.1)
   - YYKit (1.0.9):
     - YYKit/no-arc (= 1.0.9)
   - YYKit/no-arc (1.0.9)
@@ -62,16 +74,19 @@ DEPENDENCIES:
   - CocoaLumberjack (= 3.5.3)
   - FCUUID (= 1.3.1)
   - fishhook (= 0.2)
+  - FMDB (= 2.7.5)
   - IQKeyboardManager (= 6.4.2)
   - JLRoutes (= 2.1)
   - Masonry (= 1.1.0)
   - MJRefresh (= 3.1.17)
+  - MLeaksFinder (= 1.0.0)
   - Reachability (= 3.2)
   - ReactiveObjC (= 3.1.1)
   - Realm (= 3.12.0)
   - SAMKeychain (= 1.5.3)
   - SDWebImage (= 5.1.1)
   - SVProgressHUD (= 2.2.5)
+  - WCDB (= 1.0.7.5)
   - YYKit (= 1.0.9)
 
 SPEC REPOS:
@@ -80,19 +95,25 @@ SPEC REPOS:
     - Aspects
     - BlocksKit
     - CocoaLumberjack
+    - FBRetainCycleDetector
     - FCUUID
     - fishhook
+    - FMDB
     - IQKeyboardManager
     - JLRoutes
     - Masonry
     - MJRefresh
+    - MLeaksFinder
     - Reachability
     - ReactiveObjC
     - Realm
     - SAMKeychain
     - SDWebImage
+    - SQLiteRepairKit
     - SVProgressHUD
     - UICKeyChainStore
+    - WCDB
+    - WCDBOptimizedSQLCipher
     - YYKit
 
 SPEC CHECKSUMS:
@@ -100,21 +121,27 @@ SPEC CHECKSUMS:
   Aspects: 7595ba96a6727a58ebcbfc954497fc5d2fdde546
   BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
   CocoaLumberjack: 2f44e60eb91c176d471fdba43b9e3eae6a721947
+  FBRetainCycleDetector: 46f8179bbb1c587deee3ea838a1a3ee02acf5015
   FCUUID: bb054fc90cd7cd99320f9f6ff8e130fe607fba05
   fishhook: ea19933abfe8f2f52c55fd8b6e2718467d3ebc89
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   IQKeyboardManager: b41e0a4943fbac4c11a239d31a688667675f962e
   JLRoutes: d755245322b94227662ea3e43492fdca94e05c5b
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MJRefresh: ee5b68f639775462faba4db0fd243baf4d42c2cf
+  MLeaksFinder: 8c435bd2f6d070af18cff082b503b21adc130fc0
   Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
   ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
   Realm: cdaef23c4ddb36ab1ddffed23f5a7f3332fc5585
   SAMKeychain: 483e1c9f32984d50ca961e26818a534283b4cd5c
   SDWebImage: 96d7f03415ccb28d299d765f93557ff8a617abd8
+  SQLiteRepairKit: 35aaae5a8838adb85f5b1eb4d796055be6060a4b
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   UICKeyChainStore: 85db518bb1d294366d15ec9b92a416c4e670518f
+  WCDB: 8e90babdeb7784c569353a4bd22a66c0a175a882
+  WCDBOptimizedSQLCipher: baf44493b0c7a3d49e97bc5b64a3856f6428ddd1
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: a41a6214b2f3a784b36be019241fe1577fdc38d8
+PODFILE CHECKSUM: 43a30debbb005a5c033859fd6af0be0579c33856
 
 COCOAPODS: 1.7.5

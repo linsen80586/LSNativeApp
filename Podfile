@@ -24,6 +24,9 @@ pod 'fishhook',             '0.2'
 pod 'Masonry',              '1.1.0'
 pod 'FCUUID',               '1.3.1'
 pod 'BlocksKit',            '2.2.5'
+pod 'MLeaksFinder',         '1.0.0'
+pod 'WCDB',                 '1.0.7.5'
+pod 'FMDB',                 '2.7.5'
 
 
 
